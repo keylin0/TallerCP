@@ -37,6 +37,8 @@ namespace Calculadora
                 {
                     return num1 + num2; //La funcion suma los 2 valores y devuelve el resultado como un entero
                 }
+                // Se crean dos else if de opciones, en los que si las opciones son igaul al numero de la llave
+                // entonces va suceder lo que se solicita
                 else 
                     if ( opciones == 2)
                 {
