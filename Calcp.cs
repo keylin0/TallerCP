@@ -25,8 +25,12 @@
                     int num2 = Convert.ToInt32(Console.ReadLine());
                     int total = sumar (num1, num2); // LLamamos a la funcion sumar agregando los valores num1 y num2 para almacenarlo en la variable total
                     Console.WriteLine("Total: " + total); // Mostramos mensaje + valor calculado por la suma
-                
                 }
+                int sumar(int num1, int num2) //Le damos valor a la funcion llamada sumar que toma 2 parametros de tipo entero
+                {
+                    return num1 + num2; //La funcion suma los 2 valores y devuelve el resultado como un entero
+                }
+                
             
             
             
