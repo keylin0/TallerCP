@@ -1,4 +1,6 @@
-﻿namespace Calculadora
+﻿using System.ComponentModel.Design;
+
+namespace Calculadora
 {
     internal class Calcp
     {
@@ -34,6 +36,31 @@
                 int sumar(int num1, int num2) //Le damos valor a la funcion llamada sumar que toma 2 parametros de tipo entero
                 {
                     return num1 + num2; //La funcion suma los 2 valores y devuelve el resultado como un entero
+                }
+                else 
+                    if ( opciones == 2)
+                {
+                    Console.WriteLine("Ingrese primer valor: ");
+                    int num1 = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Ingrese segundo valor: ");
+                    int num2 = Convert.ToInt32(Console.ReadLine());
+
+                    int total = (num1 - num2);
+                    Console.WriteLine("Total : " + total);
+
+                }
+
+                else if (opciones == 3)
+                {
+                    Console.WriteLine("Ingrese primer valor: ");
+                    int num1 = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Ingrese segundo valor: ");
+                    int num2 = Convert.ToInt32(Console.ReadLine());
+
+                    int total = (num1 * num2);
+                    Console.WriteLine("Total: " + total);
                 }
             }
         }
