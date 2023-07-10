@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-
-namespace Calculadora
+﻿namespace Calculadora
 {
     internal class Calcp
     {
@@ -37,11 +35,8 @@ namespace Calculadora
                 {
                     return num1 + num2; //La funcion suma los 2 valores y devuelve el resultado como un entero
                 }
-                // Se crean dos else if de opciones, en los que si las opciones son igaul al numero de la llave
-                // entonces va suceder lo que se solicita
-                else 
-                    if ( opciones == 2)
-                {
+                if (opciones == 2)  // Se crean un if de opciones, en los que si las opciones son igual al numero de la llave entonces va suceder lo que se solicita
+                {                            
                     Console.WriteLine("Ingrese primer valor: ");
                     int num1 = Convert.ToInt32(Console.ReadLine());
 
@@ -50,9 +45,7 @@ namespace Calculadora
 
                     int total = (num1 - num2);
                     Console.WriteLine("Total : " + total);
-
                 }
-
                 else if (opciones == 3)
                 {
                     Console.WriteLine("Ingrese primer valor: ");
