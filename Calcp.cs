@@ -25,18 +25,20 @@
                     int num2 = Convert.ToInt32(Console.ReadLine());
                     int total = sumar(num1, num2); // LLamamos a la funcion sumar agregando los valores num1 y num2 para almacenarlo en la variable total
                     Console.WriteLine("Total: " + total); // Mostramos mensaje + valor calculado por la suma
+                    break;
                 }
                 else if (opciones == 5) //Si la variable opciones es igual a 5 se limpiara la pantalla
                 {
                     Console.Clear(); //Limpiamos pantalla
+                    Console.WriteLine(menuc); // Despues de limpiar pantalla mostramos en consola el menu nuevamente
                 }
-                Console.WriteLine(menuc); // Despues de limpiar pantalla mostramos en consola el menu nuevamente
+
                 int sumar(int num1, int num2) //Le damos valor a la funcion llamada sumar que toma 2 parametros de tipo entero
                 {
                     return num1 + num2; //La funcion suma los 2 valores y devuelve el resultado como un entero
                 }
                 if (opciones == 2)  // Se crean un if de opciones, en los que si las opciones son igual al numero de la llave entonces va suceder lo que se solicita
-                {                            
+                {
                     Console.WriteLine("Ingrese primer valor: ");
                     int num1 = Convert.ToInt32(Console.ReadLine());
 
@@ -59,41 +61,25 @@
                 }
                 else if (opciones == 4) //verificacion de variable si se marca la opcion 4 se ejecutara el codigo dentreo de este bloque else if
                 {
-                    Console.WriteLine("Ingrese primer valor: "); // Muestra un mensaje en la consola donde se le especifica al usuaria que escriba el primer valor 
+                    Console.WriteLine("Ingrese primer valor: "); // Muestra un mensaje en la consola donde se le especifica al usuaria que escriba el primer valor
                     int num1 = Convert.ToInt32(Console.ReadLine()); // lee la entrada del usuario desde la consola Console.ReadLine que devuelve una cadena.
                     //luego se utiliza Convert.ToInt32 para convertir esa cadena en un entero y lo asigna a la variable num1
 
-                    Console.WriteLine("Ingrese segundo valor: "); // Se le solicita al usuario que ingrese el siguiente valor 
+                    Console.WriteLine("Ingrese segundo valor: "); // Se le solicita al usuario que ingrese el siguiente valor
                     int num2 = Convert.ToInt32(Console.ReadLine());
 
                     int total = (num1 / num2); // Se realiza la operacion de divicion entre ´num1´ y ´num2´
                     Console.WriteLine("Total:" + total); // muestra en la consola el mensaje "Total:" seguido del valor de la variable total.
-                                                         // La concatenación de la cadena y el valor se realiza mediante el operador 
-
-
-                }
+                                                         // La concatenación de la cadena y el valor se realiza mediante el operador
+                } //Salir
                 else if (opciones == 6) //verifica si la variable opciones es igual a 6. Si es así,
                                         //se ejecuta el bloque de código dentro de este else if.
                 {
-                    // Limpiar pantalla y salir
                     Console.Clear(); // se utiliza Console.Clear() para limpiar la pantalla de la consola
                     Console.WriteLine("¡Pantalla limpiada! Saliendo del programa..."); // y Console.WriteLine() para mostrar el mensaje "¡Pantalla limpiada! Saliendo del programa..."
                                                                                        // en la nueva pantalla limpia.
-                    return; //se utiliza return para finalizar el programa inmediatamente y salir del método Main().
+                    ; //se utiliza return para finalizar el programa inmediatamente
                 }
-                else
-                {
-                    Console.WriteLine("Opción inválida. Inténtalo de nuevo.");
-                }
-
-                Console.WriteLine("Presiona cualquier tecla para continuar...");
-                Console.ReadKey(); // se utiliza Console.ReadKey() para esperar a que el usuario presione cualquier tecla.
-                Console.Clear(); // Después de que el usuario presione una tecla, se utiliza Console.Clear()
-                                 // para limpiar la pantalla de la consola.
-
-                while (opciones != 6) ; // Finalmente, se ejecuta un bucle while que comprueba si opciones es diferente de 6. Este bucle permite que el programa continúe solicitando
-                                        // al usuario que ingrese una opción hasta que se seleccione la opción 6 para salir
-                
             }
         }
     }
