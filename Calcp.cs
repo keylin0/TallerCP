@@ -78,7 +78,7 @@
                     Console.Clear(); // se utiliza Console.Clear() para limpiar la pantalla de la consola
                     Console.WriteLine("¡Pantalla limpiada! Saliendo del programa..."); // y Console.WriteLine() para mostrar el mensaje "¡Pantalla limpiada! Saliendo del programa..."
                                                                                        // en la nueva pantalla limpia.
-                    ; //se utiliza return para finalizar el programa inmediatamente
+                    
                 }
             }
         }
